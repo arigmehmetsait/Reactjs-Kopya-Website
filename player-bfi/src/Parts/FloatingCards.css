@@ -1,0 +1,45 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+.image-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: #dc3545;
+    /* danger rengi */
+    color: #fff;
+    padding: 10px;
+    transition: height 0.3s ease;
+}
+
+.image-item:hover .image-overlay {
+    height: 80px;
+    /* Kayan kısımın yüksekliği */
+}
+
+.overlay-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.overlay-description {
+    font-size: 14px;
+}

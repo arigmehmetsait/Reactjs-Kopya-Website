@@ -1,0 +1,9 @@
+#b {
+    text-decoration: none;
+    color: white;
+}
+
+#b:hover {
+    text-decoration: underline;
+    color: white;
+}

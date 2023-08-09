@@ -1,0 +1,144 @@
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+
+.gallery-item {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.gallery-item:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.image-description {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.rent-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    /* Danger background color */
+    padding: 5px;
+    border-radius: 0;
+}
+
+.rent-text {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar {
+    border: 4px;
+}
+
+/* Homepagemid.css */
+
+.latest-releases-container {
+    background-color: black;
+    padding: 20px;
+}
+
+.latest-releases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.latest-release-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.latest-release-image {
+    width: 100%;
+    height: auto;
+}
+
+.latest-release-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 10px;
+    opacity: 1;
+}
+
+.latest-release-item:hover .latest-release-overlay {
+    opacity: 1;
+}
+
+.latest-release-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 200px;
+}
+
+.latest-release-description {
+    font-size: 15px;
+    margin-top: 200;
+}
+
+@media screen and (max-width: 768px) {
+    .latest-releases-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .latest-release-item {
+        width: 100%;
+    }
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: white;
+}
